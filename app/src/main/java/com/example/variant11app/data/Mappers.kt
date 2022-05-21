@@ -4,8 +4,9 @@ import com.example.variant11app.domain.Developer
 import com.example.variant11app.domain.Message
 import com.example.variant11app.domain.ReverseSettings
 
-fun ReverseSettingsPreferences.toDomain() = ReverseSettings(this.isReverse, this.isUpperCase)
-
 fun DeveloperPreferences.toDomain() = Developer(this.name)
 
 fun MessagePreferences.toDomain() = Message(this.text)
+
+fun ReverseSettingsPreferences.toDomain() = ReverseSettings(this.isReverse, this.isUpperCase)
+
