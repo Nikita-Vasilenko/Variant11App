@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_mainFragment_to_aboutFragment"
             app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_reverseDialogFragment"
+            app:destination="@id/reverseDialogFragment" />
     </fragment>
 
     <fragment
@@ -20,4 +23,9 @@
         android:name="com.example.variant11app.presentation.about.AboutFragment"
         android:label="AboutFragment"
         tools:layout="@layout/fragment_about" />
+    <dialog
+        android:id="@+id/reverseDialogFragment"
+        android:name="com.example.variant11app.presentation.reverse.ReverseDialogFragment"
+        android:label="ReverseDialogFragment"
+        tools:layout="@layout/fragment_reverse_dialog" />
 </navigation>
