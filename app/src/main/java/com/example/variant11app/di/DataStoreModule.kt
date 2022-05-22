@@ -34,7 +34,4 @@ private val Context.reverseSettingsPreferences: DataStore<ReverseSettingsPrefere
 val dataStoreModule = module {
     single<DataStore<DeveloperPreferences>> { androidContext().developerPreferences }
 
-    single<DataStore<MessagePreferences>> { androidContext().messagePreferences }
-
-    single<DataStore<ReverseSettingsPreferences>> { androidContext().reverseSettingsPreferences }
 }

@@ -10,5 +10,14 @@ import kotlinx.coroutines.flow.map
 class DeveloperRepository(
     private val dataStore: DataStore<DeveloperPreferences>
 ) {
-    val reverseSettings: Flow<Developer> = dataStore.data.map { prefs -> prefs.toDomain() }
+    val developer: Flow<Developer?> = dataStore.data.map { prefs -> prefs.toDomain() }
+
+
+    suspend fun setDeveloper(developer: Developer) = dataStore.updateData { prefs ->
+        prefs.toBuilder()
+            .setName(developer.name)
+            .setMessage(developer.message)
+            .setGroupName(developer.groupName)
+            .build()
+    }
 }
