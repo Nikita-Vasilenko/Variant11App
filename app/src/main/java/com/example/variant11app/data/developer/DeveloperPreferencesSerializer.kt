@@ -1,3 +1,5 @@
+@file:Suppress("BlockingMethodInNonBlockingContext")
+
 package com.example.variant11app.data.developer
 
 import androidx.datastore.core.CorruptionException

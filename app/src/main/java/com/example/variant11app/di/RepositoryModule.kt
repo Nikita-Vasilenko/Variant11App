@@ -5,5 +5,5 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 
 val repositoryModule = module {
-    single<DeveloperRepository> { DeveloperRepository(androidContext()) }
+    single { DeveloperRepository(androidContext()) }
 }
