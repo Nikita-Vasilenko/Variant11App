@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.variant11app.databinding.FragmentAboutBinding
-import com.example.variant11app.presentation.collectOnLifecycle
+import com.example.variant11app.presentation.util.collectOnLifecycle
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class AboutFragment : Fragment() {
