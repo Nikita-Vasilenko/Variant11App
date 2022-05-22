@@ -57,7 +57,7 @@ class MainFragment : Fragment() {
 
     private fun navigateToAboutFragment() {
         if (findNavController().currentDestination?.id == R.id.mainFragment) {
-//            findNavController().navigate(toAbout)
+            findNavController().navigate(R.id.action_mainFragment_to_aboutFragment)
         }
     }
 }

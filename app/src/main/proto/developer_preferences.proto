@@ -4,4 +4,6 @@ option java_multiple_files = true;
 
 message DeveloperPreferences{
   string name = 1;
+  string message = 2;
+  string groupName = 3;
 }
