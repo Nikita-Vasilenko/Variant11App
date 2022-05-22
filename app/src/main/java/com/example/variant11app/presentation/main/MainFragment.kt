@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.variant11app.R
 import com.example.variant11app.databinding.FragmentMainBinding
-import com.example.variant11app.presentation.collectOnLifecycle
+import com.example.variant11app.presentation.util.collectOnLifecycle
 import com.example.variant11app.presentation.util.NavigationEvent
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -51,7 +51,7 @@ class MainFragment : Fragment() {
 
     private fun navigateToReverseFragment() {
         if (findNavController().currentDestination?.id == R.id.mainFragment) {
-//            findNavController().navigate(toReverse)
+            findNavController().navigate(R.id.action_mainFragment_to_reverseDialogFragment)
         }
     }
 

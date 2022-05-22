@@ -1,4 +1,4 @@
-package com.example.variant11app.presentation
+package com.example.variant11app.presentation.util
 
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
